@@ -12,6 +12,9 @@
 }
 
 .login-content .login-panel {
+    max-width: 906px;
+    margin: 10px auto;
+    position: relative;
 }
 
 .login-panel .camera-image {
@@ -21,7 +24,13 @@
 }
 
 .wrapper .login-footer {
-    margin: 1vw 2vh;
+    margin: 10px auto;
+    max-width: 1150px;
+    display: flex;
+}
+
+.wrapper .login-footer .login-footer-nav {
+    flex: 2;
 }
 
 .wrapper .login-footer .login-footer-nav ul li {
@@ -30,7 +39,25 @@
     font-family: sans-serif;
     color: dodgerblue;
     font-weight: 700;
-    font-size: .9em;
+    font-size: .7em;
 }
 
+.login-footer-copyright {
+    flex: 1;
+    color: #8e8e8e;
+    font-weight: 700;
+    font-size: .9em;
+    text-align: right;
+}
+
+
+.ig-slider {
+    position: absolute;
+    top: 15%;
+    left: 16.4%;
+}
+
+.ig-slider img {
+    width: 245px;
+}
 
