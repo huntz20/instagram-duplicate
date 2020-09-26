@@ -4,35 +4,33 @@
 }
 
 .wrapper {
-    border: 10px red solid ;
     margin: 10px;
     padding: 10px;
 }
 
 .wrapper .login-content {
-    border: 5px blue solid;
-    height: 350px;
 }
 
 .login-content .login-panel {
-    border: 5px rebeccapurple solid;
-    height: 150px;
 }
 
 .login-panel .camera-image {
-    border: 5px seagreen solid;
-    height: 150px;
 }
 .login-panel .login-form {
-    height: 150px;
-    border: 5px solid burlywood;
+
 }
 
 .wrapper .login-footer {
-    border: 5px yellow solid;
-    height: 150px;
+    margin: 1vw 2vh;
 }
 
-
+.wrapper .login-footer .login-footer-nav ul li {
+    display : inline-block;
+    padding: 1em 5px;
+    font-family: sans-serif;
+    color: dodgerblue;
+    font-weight: 700;
+    font-size: .9em;
+}
 
 
