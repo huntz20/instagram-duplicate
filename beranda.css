@@ -1,9 +1,10 @@
+
 body{
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: #FAFAFA;
 }
 
 .navbar{
@@ -18,6 +19,7 @@ body{
 
 .logo{
     margin-left: 15%;
+    width: 10%;
 }
 .nav{
     display: flex;
@@ -26,11 +28,6 @@ body{
     list-style-type: none;
     margin-right: 15%;
 }
-
-li{
-    margin: 20px;
-}
-
 .search{
     width: 250px;
     margin-left: 100px;
@@ -38,7 +35,9 @@ li{
 }
 input[type = text]{
     border: none;
-    background-color: #ececec;
+    background-color: #FAFAFA;
+    outline-color: #FAFAFA;
+    border-color:1px solid #868686;
     border-radius: 2px;
     display: block;
     width: 100%;
@@ -52,7 +51,8 @@ input[type = text]{
 .fa-home,
 .fa-paper-plane,
 .fa-user-circle,
-.fa-compass{
+.fa-compass,
+.fa-heart{
     font-size: 22px;
     cursor: pointer;
     color: #5e5c5c;
@@ -65,14 +65,14 @@ input[type = text]{
     padding-top: 30px;
     width: 100%;
     height: 100vh;
-    background-color: rgb(202, 80, 80);
+    background-color:#FAFAFA;
     margin: auto;
 }
 
 .main-content{
     width: 80%;
     height: 100vh;
-    background-color: #ececec;
+    /* background-color: #ffffff; */
     margin: auto;
     display: flex;
 }
@@ -85,12 +85,22 @@ input[type = text]{
 .story-ig{
     width: 100%;
     height: 100px;
-    background-color: brown;
+    background-color:#fff;
     display: flex;
     margin: auto;
     align-items: center;
-    text-align: center;
     justify-content: center;
+    border:2px solid #ececec;
+}
+
+ul.line{
+    padding: 0px;
+}
+
+.line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .story-user{
@@ -99,18 +109,222 @@ input[type = text]{
     margin: auto;
 }
 
-.post{
+.content{
     width: 100%;
-    height: 50%;
+    height: 135vh;
     margin-top: 30px;
-    background-color: cornflowerblue;
+    border: 1px solid #ececec;
+    border-color: #fff;
 }
 
 
 .sidebar{
     width: 30%;
     height: 30%;
-    /* margin-top: 30px; */
+    position: fixed;
     flex-basis: 40%;
-    background-color: cyan;
+    right: 50px;
+}
+
+/* bagian story img */
+li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+.gambar-story{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(90deg, #FEC053,#EE243F,#ac3c96,#5655a4);
+}
+.header-content{
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+
+}
+.image-profile{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left:20px;
+    padding: 3px;
+    background: linear-gradient(90deg, #FEC053,#EE243F,#ac3c96,#5655a4);
+}
+
+.user-profile{
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.fa-ellipsis-h {
+    font-size: 20px;
+    margin-left: 500px;
+}
+
+.image-post{
+    height: 500px;
+    background-image: url(./instagram-assets/gambarmu.jpg);
+    background-size: cover;
+    border: 1px solid #ececec;
+}
+
+.icon-post{
+    height: 60px;
+    display: flex;
+
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.right-icon{
+    position: absolute;
+    margin-right: 0px;
+}
+
+.image-icon{
+    width: 25px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+.bookmark{
+    width: 20px;
+    height: 25px;
+    margin-left: 570px;
+}
+
+.likes{
+    margin-left: 15px;
+}
+
+p{
+    font-size: 17px;
+}
+
+.post-comment{
+    margin-left: 15px;
+    line-height: 10px;
+}
+span{
+
+    font-size:  16px;
+    font-weight: 600;
+}
+p.view-reply{
+    margin-bottom: 0px;
+}
+
+span:nth-child(2){
+    color: blue;
+    cursor: pointer;
+}
+.view-reply,
+span:nth-child(3){
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+.like-reply{
+    width: 17px;
+    height: 17px;
+    margin-right: 19px;
+ 
+}
+
+.reply{
+   display: flex;
+   justify-content: space-between;
+   height: 25px;
+}
+
+P:nth-child(5){
+    margin-top: 10px;
+    font-size: 10px;
+    color: #8e8e8e;
+}
+
+/* bagian comment */
+
+.add{
+    height: 50px;
+    border: 1px solid #eeccee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input.post{
+  background:none;
+  width: 450px;
+  text-align: left;
+  padding: 5px;
+  outline-color: white;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: skyblue;
+}
+
+.recommend{
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.item{
+    width: 55px;
+    height: 55px;
+}
+
+.sidebar-name{
+    left: 0px;
+}
+
+.switch,
+.follow{
+    margin-left: 218px;
+    text-align: center;
+}
+
+.follow{
+    margin-left: 230px;
+    text-align: center;
+}
+
+
+.suggest{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.suggest-header{
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.suggest-profile{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.suggest-image{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(90deg, #FEC053,#EE243F,#ac3c96,#5655a4);
 }
