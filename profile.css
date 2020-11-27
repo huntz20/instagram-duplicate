@@ -6,49 +6,52 @@
     padding: 0;
 }
 
+hr {
+    border-top: 1px solid#d3d3d3;
+}
+
 .profile-wrapper {
-    height: 100vh;
-    width: auto;
+    height: auto;
+    width: 100%;
     background-color: #fafafa;
     font-family: 'Open Sans', sans-serif;
 }
 
 /* top nav */
-.profile-wrapper .topnav {
+nav {
     z-index: 1;
     width: 100%;
-    height: 40px;
-    display: flex;
+    height: 55px;
     position: fixed;
     background-color: white;
-    padding: 15px 200px 0;
     border-bottom: 1px solid #d3d3d3;
 }
 
-.profile-wrapper .topnav .nav-brand {
-    left: 0;
-    height: 100%;
-    display: inline;
-    position: relative;
+.topnav {
+    display: flex;
+    margin: 15px 13% 0;
+    padding: 0px 30px 0;
 }
 
-.profile-wrapper .topnav .nav-brand .brand {
+.topnav .nav-brand {
+    left: 0;
+    height: 100%;
+}
+
+.nav-brand .brand {
     zoom: 0.6;
     width: 181px;
     height: 52px;
-    border: none;
-    display: inline-flex;
+    display: inline-block;
     background: url('./instagram-assets/profile/ig-sprite.png') 0px -180px;
 }
 
-.profile-wrapper .nav-search {
-    position: relative;
-    display: inline;
-    height: 100%;
-    left: 20%;
+.topnav .nav-search {
+    position: fixed;
+    left: 42%;
 }
 
-.profile-wrapper .nav-search input {
+.nav-search input {
     height: 25px;
     width: 210px;
     border: #d3d3d3 solid 1px;
@@ -56,17 +59,16 @@
 
 }
 
-.profile-wrapper .nav-search input::-webkit-input-placeholder {
+.nav-search input::-webkit-input-placeholder {
     text-align: center;
 }
 
-.profile-wrapper .topnav .nav-icon {
-    left: 30%;
-    position: relative;
-    display: inline;
+.topnav .nav-icon {
+    position: fixed;
+    left: 70%;
 }
 
-.profile-wrapper .topnav .nav-icon li {
+.nav-icon a {
     width: 23px;
     height: 23px;
     list-style: none;
@@ -99,31 +101,34 @@
     background-position: -94px -452px;
 }
 
-/* profile content */
+
 .profile-wrapper .profile-content {
-    height: 100%;
-    margin: 0 167px 0 167px;
+    margin: 0 13% 0;
     padding: 90px 20px 0;
 
 }
 
-.profile-wrapper .profile-content .profile {
-    margin-left: 70px;
+.profile-content .profile {
+    display: flex;
 }
 
-.profile-wrapper .profile-content .profile img {
+.profile .profile-pic {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.profile img {
     border-radius: 50%;
     height: 150px;
     width: 150px;
     float: left;
 }
 
-.profile-wrapper .profile-content .profile .profile-detail {
+.profile .profile-detail {
     height: 200px;
-    padding-left: 250px;
 }
 
-.profile-wrapper .profile-content .profile .profile-detail .profile-id {
+.profile-detail .profile-id {
     height: 50px;
     text-align: center;
     display: inline-flex;
@@ -151,7 +156,7 @@
     background-position: -117px -448px;
 }
 
-.profile-wrapper .profile-content .profile .profile-detail .profile-stat {
+.profile-detail .profile-stat {
     height: 50px;
     width: 100%;
     text-align: center;
@@ -160,14 +165,14 @@
     align-content: center;
 }
 
-.profile-wrapper .profile-content .profile .profile-detail .profile-stat a {
+.profile-detail .profile-stat a {
     margin: 0px 50px 0 0px;
     text-decoration: none;
     font-size: 1rem;
     color: black;
 }
 
-.profile-wrapper .profile-content .profile .profile-detail .profile-desc {
+.profile-detail .profile-desc {
     width: 100%;
     height: 100px;
 }
@@ -179,13 +184,13 @@
     margin-bottom: 60px;
 }
 
-.profile-wrapper .profile-highlight li {
+.profile-highlight li {
     list-style: none;
     text-align: center;
     margin: 0px 20px 0px;
 }
 
-.profile-wrapper .profile-highlight img {
+.profile-highlight img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -195,43 +200,46 @@
     height: 40px;
 }
 
-.profile-wrapper .profile-tab .menu-tab {
+.profile-tab .menu-tab {
     height: auto;
     width: 50%;
     margin: 0px auto 0px auto;
-    /* padding-left: 20%; */
     display: flex;
-
+    justify-content: center;
 }
 
-.profile-wrapper .profile-tab .menu-tab li {
+
+.menu-tab a {
     display: inline-flex;
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 5px;
     text-align: center;
 }
 
-hr {
-    color: #dbdbdb;
-    margin-bottom: 0px;
-}
 
-.profile-wrapper .profile-tab .menu-tab a {
-    width: 70px;
-    height: 31px;
-    color: black;
+
+.menu-tab a {
     border: none;
+    width: 70px;
+    height: 20px;
+    padding: 10px;
+    color: black;
+    margin: 0px 20px;
     text-decoration: none;
 
 }
 
-.profile-wrapper .profile-tab .menu-tab span {
+.menu-tab a.active {
+    border-top: 1px solid black;
+}
+
+.menu-tab span {
+    zoom: 1.3;
     width: 15px;
     height: 15px;
     display: inline;
+    margin-right: 2px;
     background: url('./instagram-assets/profile/ig-sprite.png') no-repeat;
-    zoom: 1.2;
-
 }
 
 #posts {
@@ -239,15 +247,15 @@ hr {
 }
 
 #igtv {
-    background-position: -187px -415px;
+    background-position: -187px -416px;
 }
 
 #saved {
-    background-position: -287px -414px;
+    background-position: -286px -415px;
 }
 
 #taged {
-    background-position: -214px -414px;
+    background-position: -216px -416px;
 }
 
 .profile-wrapper .profile-galery {
@@ -255,13 +263,13 @@ hr {
     width: 100%;
 }
 
-.profile-wrapper .profile-galery ul {
+.profile-galery ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.profile-wrapper .profile-galery li {
+.profile-galery li {
     width: 31%;
     list-style: none;
     position: relative;
@@ -269,7 +277,7 @@ hr {
     object-fit: cover;
 }
 
-.profile-wrapper .profile-galery img {
+.profile-galery img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -295,12 +303,12 @@ footer {
     color: #8e8e8e;
 }
 
-.profile-footer .footer-container li {
+.footer-container li {
     margin: 0 8px 12px 8px;
     list-style: none;
 }
 
-.profile-footer .footer-container a {
+.footer-container a {
     text-decoration: none;
     color: #8e8e8e;
 }
