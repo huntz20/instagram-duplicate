@@ -1,0 +1,315 @@
+/* @kapawit */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-wrapper {
+    height: 100vh;
+    width: auto;
+    background-color: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* top nav */
+.profile-wrapper .topnav {
+    z-index: 1;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    padding: 15px 200px 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.profile-wrapper .topnav .nav-brand {
+    left: 0;
+    height: 100%;
+    display: inline;
+    position: relative;
+}
+
+.profile-wrapper .topnav .nav-brand .brand {
+    zoom: 0.6;
+    width: 181px;
+    height: 52px;
+    border: none;
+    display: inline-flex;
+    background: url('./instagram-assets/profile/ig-sprite.png') 0px -180px;
+}
+
+.profile-wrapper .nav-search {
+    position: relative;
+    display: inline;
+    height: 100%;
+    left: 20%;
+}
+
+.profile-wrapper .nav-search input {
+    height: 25px;
+    width: 210px;
+    border: #d3d3d3 solid 1px;
+    background-color: #fafafa;
+
+}
+
+.profile-wrapper .nav-search input::-webkit-input-placeholder {
+    text-align: center;
+}
+
+.profile-wrapper .topnav .nav-icon {
+    left: 30%;
+    position: relative;
+    display: inline;
+}
+
+.profile-wrapper .topnav .nav-icon li {
+    width: 23px;
+    height: 23px;
+    list-style: none;
+    position: absolute;
+    background: url('./instagram-assets/profile/ig-sprite.png') no-repeat;
+}
+
+#home {
+    left: 0px;
+    background-position: 1px -450px;
+}
+
+#inbox {
+    left: 45px;
+    background-position: -21px -450px;
+}
+
+#explore {
+    left: 90px;
+    background-position: -45px -452px;
+}
+
+#activity {
+    left: 135px;
+    background-position: -68px -451px;
+}
+
+#profile {
+    left: 180px;
+    background-position: -94px -452px;
+}
+
+/* profile content */
+.profile-wrapper .profile-content {
+    height: 100%;
+    margin: 0 167px 0 167px;
+    padding: 90px 20px 0;
+
+}
+
+.profile-wrapper .profile-content .profile {
+    margin-left: 70px;
+}
+
+.profile-wrapper .profile-content .profile img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    float: left;
+}
+
+.profile-wrapper .profile-content .profile .profile-detail {
+    height: 200px;
+    padding-left: 250px;
+}
+
+.profile-wrapper .profile-content .profile .profile-detail .profile-id {
+    height: 50px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+#btnprofile {
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: #dbdbdb solid 1px;
+    text-decoration: none;
+}
+
+#btnsetting {
+    width: 25px;
+    height: 30px;
+    margin-left: 20px;
+    background: url('./instagram-assets/profile/ig-sprite.png') no-repeat 0 0;
+    background-position: -117px -448px;
+}
+
+.profile-wrapper .profile-content .profile .profile-detail .profile-stat {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+
+.profile-wrapper .profile-content .profile .profile-detail .profile-stat a {
+    margin: 0px 50px 0 0px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+}
+
+.profile-wrapper .profile-content .profile .profile-detail .profile-desc {
+    width: 100%;
+    height: 100px;
+}
+
+.profile-wrapper .profile-highlight {
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 60px;
+}
+
+.profile-wrapper .profile-highlight li {
+    list-style: none;
+    text-align: center;
+    margin: 0px 20px 0px;
+}
+
+.profile-wrapper .profile-highlight img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-wrapper .profile-tab {
+    height: 40px;
+}
+
+.profile-wrapper .profile-tab .menu-tab {
+    height: auto;
+    width: 50%;
+    margin: 0px auto 0px auto;
+    /* padding-left: 20%; */
+    display: flex;
+
+}
+
+.profile-wrapper .profile-tab .menu-tab li {
+    display: inline-flex;
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+hr {
+    color: #dbdbdb;
+    margin-bottom: 0px;
+}
+
+.profile-wrapper .profile-tab .menu-tab a {
+    width: 70px;
+    height: 31px;
+    color: black;
+    border: none;
+    text-decoration: none;
+
+}
+
+.profile-wrapper .profile-tab .menu-tab span {
+    width: 15px;
+    height: 15px;
+    display: inline;
+    background: url('./instagram-assets/profile/ig-sprite.png') no-repeat;
+    zoom: 1.2;
+
+}
+
+#posts {
+    background-position: -159px -416px;
+}
+
+#igtv {
+    background-position: -187px -415px;
+}
+
+#saved {
+    background-position: -287px -414px;
+}
+
+#taged {
+    background-position: -214px -414px;
+}
+
+.profile-wrapper .profile-galery {
+    min-height: 300px;
+    width: 100%;
+}
+
+.profile-wrapper .profile-galery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.profile-wrapper .profile-galery li {
+    width: 31%;
+    list-style: none;
+    position: relative;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.profile-wrapper .profile-galery img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    padding: 0px 16px;
+    font-size: 12px;
+    background: #fafafa;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.profile-footer {
+    padding: 20px 0px;
+    font-size: small;
+}
+
+.profile-footer .footer-container {
+    display: flex;
+    justify-content: center;
+    color: #8e8e8e;
+}
+
+.profile-footer .footer-container li {
+    margin: 0 8px 12px 8px;
+    list-style: none;
+}
+
+.profile-footer .footer-container a {
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+.profile-footer .footer-language {
+    border: none;
+    color: #8e8e8e;
+}
+
+.profile-footer .footer-copyright {
+    margin-left: 20px;
+}
