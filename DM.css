@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    border-bottom: solid 1px #DBDBDB;
+    background-color: #FFFFFF;
+}
+
+header .container {
+    max-width: 935px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .instagram-logo-container {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .instagram-logo {
+    width: 105px;
+    height: 30px;
+    background: url("./instagram-assets/ig-sprite.png") -122px -225px;
+}
+
+
+header .search-box {
+    max-width: 215px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .search-box input[type="text"] {
+    width: 100%;
+    height: 28px;
+    border-radius: 2px;
+    border: solid 1px #DBDBDB;
+    align-items: center;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+header .nav-icon {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .nav-icon-listener {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-icon-listener li {
+    margin-left: 24px;
+    background-color: blue;
+}
+
+.nav-icon-listener li,
+.nav-icon-listener a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+
+header .home-icon {
+    background: url("./instagram-assets/nav-icon-sprite.png") 258px 135px;
+}
+
+header .dm-icon {
+    background: url("./instagram-assets/nav-icon-sprite.png") -67px 136px;
+
+}
+
+header .explore-icon {
+    background: url("./instagram-assets/nav-icon-sprite.png") 148px 135px;
+
+}
+
+header .activity-icon {
+    background: url("./instagram-assets/nav-icon-sprite.png") 93px 135px;
+}
+
+header .profile-icon {
+    background: url("./instagram-assets/nav-icon-sprite.png") 38px 135px;
+}
+
+main .container {
+    width: 100vw;
+    height: 92vh;
+    padding: 20px;
+}
+
+main .main-content {
+    width: 100%;
+    height: 100%;
+    max-width: 935px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    display: flex;
+    border-radius: 5px;
+    border: solid 1px #DBDBDB;
+}
+
+main .list-chats {
+    width: 37vw;
+    height: 100%;
+    border-right: solid 1px #DBDBDB;
+}
+
+main .chat-details {
+    width: 63vw;
+    height: 100%;
+}
+
+main .chat-header {
+    padding: 0 20px;
+    height: 9vh;
+    border-bottom: solid 1px #DBDBDB;
+    position: relative;
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    */
+}
+
+main .username-button {
+    width: 229px;
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .username-button button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    outline: none;
+    background-color: #FFF;
+}
+
+main .username-button button .username-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .username-button .username-button-container img {
+    width: 20px;
+    height: 20px;
+}
+
+main .new-message-button {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .chat-list {
+    width: 100%;
+    height: 560px;
+    overflow: hidden auto;
+}
+
+main .chat-list-container .message-request {
+    display: flex;
+    padding: 8px 20px 0px 20px;
+    justify-content: space-between;
+    margin: 4px 0px;
+}
+
+main .chat-list-container .message-request a {
+    text-decoration: none;
+    color: #0075f6;
+}
+
+main .chat-list-container .message-request a:active {
+    color: #0095f6;
+}
+
+main .chat-list-container .message-listener {
+    height: 72px;
+    width: 100%;
+}
+
+main .chat-list-container .message-listener a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .chat-list-container .message-listener a:hover {
+    background-color: #FAFAFA;
+}
+
+main .chat-list-container .message-listener a:active {
+    color: black;
+}
+
+main .chat-list-container .message-listener .profile-image {
+    margin-right: 12px;
+}
+
+main .chat-list-container .message-listener .profile-image img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+main .chat-list-container .message-listener .message-content {
+    align-self: center;
+    color: black;
+}
+
+
+main .chat-list-container .message-listener .message-status-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .chat-list-container .message-listener .message-status {
+    width: 8px;
+    height: 8px;
+    background-color: #0075f6;
+    border-radius: 50%;
+    align-self: center;
+}
+
+main .chat-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .chat-details .dm-icon img {
+    width: 96px;
+    height: 96px;
+}
+
+main .chat-details .chat-details-title {
+    margin-top: 32px;
+}
+
+main .chat-details .chat-details-title h2 {
+    font-weight: 400;
+}
+
+main .chat-details .chat-details-subtitle {
+    margin-top: 8px;
+    margin-bottom: 32px;
+    font-weight: 200;
+}
+
+main .chat-details button {
+    width: 114px;
+    height: 30px;
+    background-color: #0095F6;
+    border-radius: 4px;
+    color: white;
+    padding: 0px 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
