@@ -136,6 +136,13 @@ nav {
     align-content: center;
 }
 
+.profile-id .verified {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background: url(./instagram-assets/profile/ig-sprite.png) no-repeat 0 0;
+    background-position: 0px -416px;
+}
 
 #btnprofile {
     width: 100px;
