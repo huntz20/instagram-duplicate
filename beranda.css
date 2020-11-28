@@ -28,6 +28,9 @@ body{
     list-style-type: none;
     margin-right: 15%;
 }
+.nav li{
+    margin-right: 25px;
+}
 .search{
     width: 250px;
     margin-left: 100px;
@@ -120,10 +123,11 @@ ul.line{
 
 .sidebar{
     width: 30%;
-    height: 30%;
+    height: 470px;
     position: fixed;
     flex-basis: 40%;
     right: 50px;
+    
 }
 
 /* bagian story img */
@@ -295,12 +299,12 @@ a {
 
 .switch,
 .follow{
-    margin-left: 218px;
+    margin-left: 208px;
     text-align: center;
 }
 
 .follow{
-    margin-left: 230px;
+    margin-left: 220px;
     text-align: center;
 }
 
@@ -313,6 +317,7 @@ a {
 .suggest-header{
     margin-bottom: 5px;
     padding: 0px;
+    color:  #8e8e8e;
 }
 
 .suggest-profile{
@@ -327,4 +332,34 @@ a {
     border-radius: 50%;
     padding: 3px;
     background: linear-gradient(90deg, #FEC053,#EE243F,#ac3c96,#5655a4);
+}
+
+.sidebar-footer{
+    width: 60%;
+    height: 45px;
+    margin-top: 20px;;
+}
+ul.footer-list{
+    padding: 0px;
+    margin-top: 10px;
+
+}
+.footer-list li{
+    display: inline;
+    position: relative;
+    margin: 0px;
+  
+}
+
+.footer-list li a{
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+p.copyright{
+    color: #8e8e8e;
+    font-weight: 500;
+    font-size: 11px;
 }
