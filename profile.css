@@ -142,6 +142,7 @@ nav {
 
 }
 
+/* profile */
 .profile-content .profile {
     display: flex;
 }
@@ -242,6 +243,8 @@ nav {
     border: #dbdbdb solid 2px;
 }
 
+/* menu above gallery img */
+
 .profile-wrapper .profile-tab {
     height: 50px;
 }
@@ -304,6 +307,7 @@ nav {
     background-position: -215px -416px;
 }
 
+/* galery */
 .profile-wrapper .profile-galery {
     min-height: 300px;
     width: 100%;
@@ -324,10 +328,59 @@ nav {
 }
 
 .profile-galery img {
+    display: block;
     max-width: 100%;
     max-height: 100%;
 }
 
+/* overlay image galery */
+.profile-galery li:hover .img-overlay {
+    opacity: 0.5;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 10px;
+    height: 94%;
+    width: 94%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.img-stat {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.img-stat .like {
+    width: 25px;
+    height: 30px;
+    margin-right: 5px;
+    background: url('./instagram-assets/profile/ig-sprite.png') no-repeat 0 0;
+    background-position: -338px -378px;
+}
+
+.img-stat .comment {
+    width: 23px;
+    height: 23px;
+    margin-left: 20px;
+    margin-right: 5px;
+    background: url(./instagram-assets/profile/ig-sprite.png) no-repeat 0 0;
+    background-position: -380px -380px;
+}
+
+
+/* footer */
 footer {
     padding: 0px 16px;
     font-size: 12px;
