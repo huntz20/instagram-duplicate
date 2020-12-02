@@ -1,20 +1,50 @@
 /* @kapawit */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+:root {
+    font-size: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
 }
 
 hr {
     border-top: 1px solid#d3d3d3;
 }
 
+h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
 .profile-wrapper {
-    height: auto;
-    width: 100%;
-    background-color: #fafafa;
-    font-family: 'Open Sans', sans-serif;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 /* top nav */
@@ -28,32 +58,40 @@ nav {
 }
 
 .topnav {
+    height: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    max-width: 100rem;
     display: flex;
-    margin: 15px 13% 0;
-    padding: 0px 30px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .topnav .nav-brand {
-    left: 0;
     height: 100%;
+    width: 31%;
+    padding-left: 10px;
+    position: relative;
 }
 
 .nav-brand .brand {
     zoom: 0.6;
     width: 181px;
     height: 52px;
-    display: inline-block;
+    display: block;
     background: url('./instagram-assets/profile/ig-sprite.png') 0px -180px;
 }
 
 .topnav .nav-search {
-    position: fixed;
-    left: 42%;
+    width: 31%;
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
 
 .nav-search input {
     height: 25px;
-    width: 210px;
+    width: 220px;
     border: #d3d3d3 solid 1px;
     background-color: #fafafa;
 
@@ -64,47 +102,43 @@ nav {
 }
 
 .topnav .nav-icon {
-    position: fixed;
-    left: 70%;
+    width: 31%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-icon a {
     width: 23px;
     height: 23px;
-    list-style: none;
-    position: absolute;
+    position: relative;
+    margin: 0px 10px 0px;
     background: url('./instagram-assets/profile/ig-sprite.png') no-repeat;
 }
 
 #home {
-    left: 0px;
     background-position: 1px -450px;
 }
 
 #inbox {
-    left: 45px;
     background-position: -21px -450px;
 }
 
 #explore {
-    left: 90px;
     background-position: -45px -452px;
 }
 
 #activity {
-    left: 135px;
     background-position: -68px -451px;
 }
 
 #profile {
-    left: 180px;
     background-position: -94px -452px;
 }
 
-
+/* profile content */
 .profile-wrapper .profile-content {
-    margin: 0 13% 0;
-    padding: 90px 20px 0;
+    padding: 85px 0px 0px;
 
 }
 
@@ -113,8 +147,9 @@ nav {
 }
 
 .profile .profile-pic {
-    width: 200px;
-    margin-left: 100px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
 }
 
 .profile img {
@@ -126,6 +161,7 @@ nav {
 
 .profile .profile-detail {
     height: 200px;
+    padding-left: 30px;
 }
 
 .profile-detail .profile-id {
@@ -146,13 +182,14 @@ nav {
 
 #btnprofile {
     width: 100px;
-    height: 20px;
-    padding: 10px;
+    height: 35px;
+    padding: 6px;
     color: black;
     margin-left: 20px;
     border-radius: 5px;
     border: #dbdbdb solid 1px;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 #btnsetting {
@@ -175,7 +212,7 @@ nav {
 .profile-detail .profile-stat a {
     margin: 0px 50px 0 0px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: black;
 }
 
@@ -189,6 +226,7 @@ nav {
     width: 100%;
     display: inline-flex;
     margin-bottom: 60px;
+    padding: 0px 40px 0;
 }
 
 .profile-highlight li {
@@ -201,14 +239,15 @@ nav {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    border: #dbdbdb solid 2px;
 }
 
 .profile-wrapper .profile-tab {
-    height: 40px;
+    height: 50px;
 }
 
 .profile-tab .menu-tab {
-    height: auto;
+    height: 100%;
     width: 50%;
     margin: 0px auto 0px auto;
     display: flex;
@@ -221,14 +260,14 @@ nav {
     padding-top: 10px;
     padding-left: 5px;
     text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
 }
-
-
 
 .menu-tab a {
     border: none;
-    width: 70px;
-    height: 20px;
+    width: 90px;
+    height: 100%;
     padding: 10px;
     color: black;
     margin: 0px 20px;
@@ -262,7 +301,7 @@ nav {
 }
 
 #taged {
-    background-position: -216px -416px;
+    background-position: -215px -416px;
 }
 
 .profile-wrapper .profile-galery {
@@ -277,7 +316,7 @@ nav {
 }
 
 .profile-galery li {
-    width: 31%;
+    width: 33%;
     list-style: none;
     position: relative;
     padding: 10px;
