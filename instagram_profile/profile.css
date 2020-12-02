@@ -1,0 +1,268 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: '', sans-serif;
+}
+/*HEADER*/
+header{
+	background: #fff;
+	border-bottom: 1px solid #dbdbdb;
+}
+.head-wrapper{
+	display: flex;
+	width: 52%;
+	padding: 0px 20px;
+	align-items: center;
+	height: 5.5vh;
+	margin: auto;
+}
+.links-wrapper,
+.nav-logo,
+.nav-search,
+.nav-links{
+	display: flex;
+}
+.links-wrapper{
+	flex: 6;
+	justify-content: flex-end;
+}
+.nav-logo{
+	flex: 6;
+	flex-direction: start;
+	align-items: center;
+	padding-top: 5px;
+}
+.sprite.logo{
+	width: 106px;
+	height: 30px;
+	border: none;
+	background: url('ig-sprite.png') -121px -225px;
+}
+.nav-search{
+	flex: 4;
+	padding: 3px;
+	background: #fafafa;
+	border: 1px solid #dbdbdb;
+	border-radius: 3px;
+	justify-content: center;
+	color: #8e8e8e;
+	cursor: text;
+	font-size: 14px;
+}
+.search-form{
+	display: flex;
+	align-items: center;
+	
+}
+
+input[type="text"]:focus {
+	outline: none;
+}
+
+.sprite.search{
+	width: 12px;
+	height: 12px;
+	background: url('ig-sprite.png') -398px -320px;
+	border: none;
+	margin-right: 6px;
+}
+.nav-links{
+	width: 64%;
+	list-style: none;
+	padding-left: 24px;
+	justify-content: space-around; 
+}
+.home,
+.message,
+.compass,
+.notification,
+.prof-navbar{
+	width: 30px;
+	height: 30px;
+}
+.sprite.home{
+	background: url('ss6.png') 0px 0px;
+}
+.sprite.message{
+	background: url('ig-sprite.png') -318px -305px;
+}
+.sprite.compass{
+	background: url('ss6.png') -86px 0px;
+}
+.sprite.notification{
+	background: url('ss6.png') -128px 0px;
+}
+.sprite.prof-navbar{
+	background: url('ss6.png') -166px 0px;
+	border-radius: 100%;
+}
+
+/*MAIN CONTENT*/
+main{
+	background: #fafafa;
+}
+
+.main-wrapper{
+	width: 52%;
+	padding: 30px 20px 0px 20px;
+	margin: auto;
+}
+.main.header{
+	display: flex;
+	margin-bottom: 44px;
+}
+.photo-wrap{
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	margin-right: 30px;
+}
+.profile.photo{
+	width: 150px;
+	height: 150px;
+	background: url('pp.png') -17px -2px;
+}
+.profile.info{
+	flex: 2;
+}
+.profile.info .settings{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.settings h2{
+	font-size: 28px;
+	font-weight: normal;
+}
+.settings .edit{
+	margin-left: 20px;
+	font-weight: bolder;
+}
+.settings .button{
+	margin-left: 5px;
+}
+.settings .edit a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #262626;
+	padding: 5px 9px;
+	border: 1px solid #dbdbdb;
+	border-radius: 4px;
+}
+.settings .button button{
+	border: none;
+	padding: 8px;
+	background: none;
+}
+.sprite.setting{
+	width: 24px;
+	height: 24px;
+	background: url('ss7.png') -85px -4px;
+}
+.profile.info .data{
+	display: flex;
+	list-style: none;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+.data .post-sum,
+.data .followers{
+	margin-right: 40px;
+}
+.followers a,
+.following a{
+	text-decoration: none;
+	color: black;
+}
+.bio h1{
+	font-size: 16px;
+}
+.main.navigation{
+	display: flex;
+	border-top: 1px solid #dbdbdb;
+	justify-content: center;
+}
+.section.posts .logo{
+	background: url('ig-sprite.png') -160px -369px;
+}
+.section.igtv .logo{
+	background: url('ig-sprite.png') -188px -369px;
+}
+.section.saved .logo{
+	background: url('ig-sprite.png') 1px -389px;
+}
+.section.tagged .logo{
+	background: url('ig-sprite.png') -216px -369px;
+}
+.section{
+	display: flex;
+	align-items: center;
+	height: 52px;
+	margin-right: 60px;
+	text-decoration: none;
+	color: black;
+}
+.section .area{
+	display: flex;
+	align-items: center;
+}
+.area .logo{
+	width: 12px;
+	height: 12px;
+}
+.section .area span{
+	margin-left: 6px;
+	font-size: 12px;
+}
+.main.gallery{
+
+}
+.article-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.artic{
+	width: 293px;
+	height: 293px;
+	border: none;
+}
+
+/*FOOTER*/
+footer{
+	padding: 0px 16px;
+	font-size: 12px;
+	background: #fafafa;
+
+}
+.foot-wrapper{
+	margin-bottom: 52px;
+}
+.line{
+	display: flex;
+	justify-content: center;
+	color: #8e8e8e;
+}
+.target{
+	margin: 0 8px 12px 8px;
+}
+.target a{
+	text-decoration: none;
+	color: #8e8e8e;
+}
+.language span{
+	display: flex;
+	align-items: center;
+}
+.dropdown-lang{
+	width: 12px;
+	height: 12px;
+	background: url('ig-sprite.png') -358px -287px;
+	margin-left: 4px;
+}
+.copyright{
+	margin-left: 16px;
+}
+.line.second{
+	padding: 12px 0px;
+}
