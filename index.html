@@ -1,44 +1,93 @@
 <!DOCTYPE html>
-<html lang="html">
+<html lang="en">
 <head>
-    <title>Instagram</title>
-    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox • Direct</title>
+    <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-<div class="wrapper">
-    <div class="login-content">
-        <div class="login-panel">
-            <div class="camera-image">
-                <img src="./instagram-assets/phone-instagram.png" alt="image phone">
-                <div class="ig-slider">
-                    <img src="./instagram-assets/ss-1.jpg" alt="ig slider">
+    <header>
+        <div class="container">
+            <div class="instagram-logo">
+                <a href="">
+                    <img src="./Instagram Assets/320px-Instagram_logo.svg.webp">
+                </a>
+            </div>
+            <div class="search-box">
+                <input type="text" name="search" id="search" placeholder="Search">
+            </div>
+            <div class="nav-icon">
+              
+                <i class="fa fa-home" style="font-size:30px"><a href="#"></a></i>
+                <i class="fa fa-paper-plane-o" style="font-size:30px"><a href="#"></a></i>
+                <i class="fa fa-compass" style="font-size:30px"><a href="#"></a></i>
+                <i class="fa fa-heart-o" style="font-size:30px"><a href="#"></a></i>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <div class="list-chats">
+                    <div class="chat-header">
+                        <div class="username-button">
+                            <button>
+                                <div class="username-button-container">
+                                    <h3>Username</h3>
+                                    <span><img src="./Instagram Assets/chevron_down.svg"></span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="new-message-button">
+                            <img src="./Instagram Assets/chevron_down.svg">
+                        </div>
+                    </div>
+                    <div class="chat-list">
+                        <div class="chat-list-container">
+                            <div class="message-request">
+                                <h4>Messages</h4>
+                                <h4><a href="#">1 Request</a></h4>
+                            </div>
+                            <div class="message-listener">
+                                <a href="#">
+                                    <div class="profile-image">
+                                        <img src="./Instagram Assets/people1.jpg">
+                                    </div>
+                                    <div class="message-content">
+                                        <div class="message-username">
+                                            <h4>Kaeya</h4>
+                                            <p>Hi How are you?<span style="margin: 0 8px;">.</span><span>7h</span></p> 
+                                        </div>
+                                    </div>
+                                    <div class="message-status-container">
+                                        <div class="message-status"></div>
+                                    </div>    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-details">
+                    <div class="dm-icon">
+                        <img src="./Instagram Assets/dm-icon.png">
+                    </div>
+                    <div class="chat-details-title">
+                        <h2>Your Messages</h2>
+                    </div>
+                    <div class="chat-details-subtitle">
+                        <p>Send private photos and messages to a friend or group</p>
+                    </div>
+                    <button type="button">
+                        Send Message
+                    </button>
                 </div>
             </div>
-            <div class="login-form">
-                <span>Hello</span>
-            </div>
         </div>
-    </div>
-    <div class="login-footer">
-       <div class="login-footer-nav">
-           <ul>
-               <li>ABOUT</li>
-               <li>HELP</li>
-               <li>PRESS</li>
-               <li>API</li>
-               <li>JOBS</li>
-               <li>PRIVACY</li>
-               <li>TERMS</li>
-               <li>LOCATIONS</li>
-               <li>TOP ACCOUNTS</li>
-               <li>HASHTAGS</li>
-               <li>LANGUAGE</li>
-           </ul>
-       </div>
-        <div class="login-footer-copyright">
-           <span> © 2020 Instagram from Facebook</span>
-        </div>
-    </div>
-</div>
+    </main>
 </body>
 </html>
