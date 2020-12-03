@@ -3,6 +3,9 @@
 <head>
 	<title>Beranda_part1</title>
 	<link rel="stylesheet" type="text/css" href="Beranda_1.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 </head>
 <body>
 	<div class="header">
@@ -84,6 +87,64 @@
 		</div>
 	</div>
 
+	<div class="content">
+		<div class="content_kiri"></div>			
+			<div class="multiple-items">
+				
+				<span class="wrap_img">
+					<img src="img/content/1.jpg">
+					<p>Aydan</p>
+				</span>
+
+				<span class="wrap_img">
+					<img src="img/content/2.jpg">
+					<p>Keyfatmala</p>
+				</span>
+
+				<span class="wrap_img">
+					<img src="img/content/3.jpg">
+					<p>Ben</p>
+				</span>
+
+				<span class="wrap_img">
+					<img src="img/content/4.jpg">
+					<p>Malih</p>
+				</span>
+
+				<span class="wrap_img">
+					<img src="img/content/5.jpg">
+					<p>Udin</p>
+				</span>
+
+				<span class="wrap_img">
+					<img src="img/content/6.jpg">
+					<p>Nana</p>
+				</span>
+
+				<span class="wrap_img">
+					<img src="img/content/7.jpg">
+					<p>Acil</p>
+				</span>
+			
+			</div>
+
+		<div class="content_kanan"></div>
+
+	</div>
+
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script>
+
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 1
+        });
+    </script>
 
 	<script type="text/javascript" src="Beranda_1.js"></script>
 </body>
