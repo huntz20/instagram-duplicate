@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Variable import */
+
+:root{
+    --images-background:url(instagram-assets/ig-sprite.png);
+}
+
+/* Start Direct Massage */
+#header {
+    display: flex;
+    background-color: #ffffff;
+    padding: 0.9rem 0 0.2rem;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.logo {
+    margin-left: 144px;
+    width: 187px;
+}
+
+#konten-wrapper {
+    background-color: #fafafa;
+    width: 100%;
+    height: 100%;
+}
+
+.logo a {
+    display: block;
+    background: var(--images-background) no-repeat -121px -224px;
+    width: 105px;
+    height: 40px;
+}
+
+.search {
+    margin-left: 208px;
+}
+
+.attribut .att-instagram {
+    display: flex;
+    width: 172px;
+    float: right;
+    padding: 5px 0 0 0;
+}
+
+.search input {
+    height: 26px;
+    width: 195px;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+.attribut {
+    width: 381px;
+}
+
+.att-instagram .attr {
+    width: 1px;
+    height: 1px;
+}
+
+.att-instagram .inbox-instagram {
+    margin-left: 28px;
+}
+
+.att-instagram .home-instagram a {
+    display: block;
+    background: url(instagram-assets/ig-sprite01.png)no-repeat -1px -451px;
+    width: 21px;
+    height: 25px;
+}
+
+.att-instagram .inbox-instagram a {
+    display: block;
+    background: var(--images-background) no-repeat -228px -154px;
+    width: 25px;
+    height: 25px;
+}
+
+.att-instagram .explore-instagram {
+    margin-left: 28px;
+}
+
+.att-instagram .explore-instagram a {
+    display: block;
+    background: url(instagram-assets/ig-sprite01.png)no-repeat -45px -451px;
+    width: 21px;
+    height: 25px;
+}
+
+
+.att-instagram .activity-instagram {
+    margin-left: 28px;
+}
+
+.att-instagram .activity-instagram a {
+    display: block;
+    background: url(instagram-assets/ig-sprite01.png)no-repeat -66px -451px;
+    width: 25px;
+    height: 25px;
+}
+
+.att-instagram .profile-instagram {
+    margin-left: 28px;
+}
+
+.att-instagram .profile-instagram a {
+    display: block;
+    background: url(instagram-assets/gambarhtml.jpg)no-repeat -10px;
+    padding: 0.1rem;
+    width: 21px;
+    border: 1px double #ffffff;
+    border-radius: 100%;
+    background-size: cover;
+    height: 22px;
+}
+
+.direct-massage {
+    height: 1349px;
+    width: 100vw;
+    position: fixed;
+}
+
+#konten-wrapper .konten {
+    padding: 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-conten {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.dm-profile {
+    width: 41%;
+    border: 1px solid #dbdbdb;
+    height: 549px;
+    background-color: #ffffff;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.main-conten .dm-personal {
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+}
+
+.dm-massage {
+    width: 70%;
+    border: 1px solid #dbdbdb;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: none;
+    background-color: #ffffff;
+}
+
+.dm-profile .nama {
+    padding: 14px 6px 14px 70px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+}
+
+.dm-profile .nama button {
+    border: none;
+    margin-left: 3px;
+    cursor: pointer;
+    background: url(instagram-assets/chevron_down.png)no-repeat;
+    width: 25px;
+    height: 21px;
+    background-size: 30px;
+    background-position-y: -5px;
+}
+
+.dm-profile .nama a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.konten .dm-massage .gambar-sprite {
+    background: url(instagram-assets/dm-icon.png)-17px -17px;
+    background-repeat: no-repeat;
+    background-size: 157px;
+    width: 8rem;
+    height: 8rem;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 23%;
+}
+
+.dm-konten h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dm-konten p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dm-konten input {
+    margin-left: 10.6rem;
+    font-size: 0.9em;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background: #3998f0;
+    cursor: pointer;
+}
+
+.dm-massage .dm-konten {
+    margin-top: 109px;
+}
+
+.dm-profile .nama .ig-connect {
+    border: none;
+    margin-left: 54px;
+    cursor: pointer;
+    background: url(instagram-assets/chevron_down.png)no-repeat;
+    width: 25px;
+    background-position-y: -5px;
+    height: 21px;
+    background-size: 30px;
+}
+
+.dm-personal h4 {
+    margin-left: auto;
+    padding: 6px;
+    color: #3998f0;
+}
+
+.dm-personal h5 {
+    padding: 6px;
+}
+
+.dm-profile .dm-personal .personal img{
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+
+.dm-profile .overFlow {
+    overflow-y: scroll;
+}
+
+.personal img {
+    width: 47px;
+    margin-right: 5px;
+    margin-left: 6px;
+    float: left;
+    border-radius: 100%;
+}
+
+.dm-profile .personal {
+    margin-top: 17px;
+    overflow-y: auto;
+}
+
+.personal p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4px;
+    font-size: 0.6rem;
+}
