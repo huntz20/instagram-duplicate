@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover • Direct</title>
+    <link rel="stylesheet" href="discover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container"> <!-- open div container -->
+            <div class="instagram-logo"> <!-- open div instagram-logo-->
+                <a href="">
+                    <img src="./image/ig-slider.png" alt="ig slider">
+                </a>
+            </div> <!-- end div instagram-logo-->
+            <div class="search-box"> <!-- open div search-box -->
+                <input type="text" name="search" id="search" placeholder="Search" value>
+            </div> <!-- end div search-box -->
+            <div class="nav-icon"> <!-- open div nav-icon-->
+                <i class="fa fa-home" style="font-size:30px"></i>
+                <i class="fa fa-paper-plane-o" style="font-size:30px"></i>
+                <i class="fa fa-compass" style="font-size:30px"></i>
+                <i class="fa fa-heart-o" style="font-size:30px"></i>
+                <i class="fa fa-profil" style="font-size:30px"></i>
+            </div> <!-- end div nav-icon-->
+        </div> <!-- end div container -->
+    </header>      
+    <main>
+        <div class="container"> <!-- open div container -->
+            <div class="main-content"> <!-- open div main-content -->
+                <div class="image"> <!-- open div image -->
+                    <div class="gallery">
+                        <a target="_blank" href="E1.jpg">
+                            <img src="image/E1.jpg" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="E2.jpg">
+                            <img src="image/E2.jpg" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="E3.jpg">
+                            <img src="image/E3.jpg" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="E4.jpg">
+                            <img src="image/E4.jpg" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="E5.jpg">
+                            <img src="image/E5.jpg" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="E6.jpg">
+                            <img src="image/E6.jpg" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="ft-7.png">
+                            <img src="image/ft-7.png" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="ft-8.png">
+                            <img src="image/ft-8.png" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="ft-9.png">
+                            <img src="image/ft-9.png" alt="ig-foto" width="600" height="400">
+                        </a>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="ft-10.png">
+                            <img src="image/ft-10.png" alt="ig-foto" width="600" height="400">
+                </div> <!-- end div image -->
+            </div> <!-- end div main-content -->
+        </div> <!-- end div container -->
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-nav">
+               <ul>
+                   <li><a href="#">About</li></a>
+                   <li><a href="#">Blog</li></a>
+                   <li><a href="#">Jobs</li></a>
+                   <li><a href="#">Help</li></a>
+                   <li><a href="#">API</li></a>
+                   <li><a href="#">Privacy</li></a>
+                   <li><a href="#">Terms</li></a>
+                   <li><a href="#">Top Accounts</li></a>
+                   <li><a href="#">Hashtags</li></a>
+                   <li><a href="#">Locations</li></a>
+               </ul>
+            </div>
+            <div class="footer-copyright">
+               <a href="#">English <span> © 2020 Instagram from Facebook</span></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
