@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    height: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ececec;
+}
+
+.judul{
+    margin-left: 10%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 10%;
+}
+
+li{
+    margin: 10px;
+}
+
+.search{
+    width: 450px;
+    margin-left: 100px;
+    /* align-items: center; */
+    /* background-color: black; */
+
+}
+input[type = text]{
+    border: none;
+    background-color: #ececec;
+    border-radius: 2px;
+    width: 80%;
+    height: 25px;
+    text-align: center;
+    font-size: 13px;
+    margin: auto;
+
+}
+
+.fa-home,
+.fa-paper-plane,
+.fa-user-circle,
+.fa-compass{
+    font-size: 22px;
+    cursor: pointer;
+    color: #5e5c5c;
+   
+}
