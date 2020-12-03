@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f7f4f4;
+}
+
+header {
+    display: inline;
+    position: relative;
+}
+
+nav {
+    background-color: #ffffff;
+    height: 50px;
+    border-bottom: 1px solid #e0dfdf;
+}
+
+.navbar {
+    margin: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+.logo .logo-ig {
+    margin-top: 10px;
+    background-image: url(../img/ig-sprite.png);
+    background-position: 740px 177px;
+    width: 130px;
+    height: 40px;
+}
+
+.search {
+    box-sizing: border-box;
+    width: 22%;
+}
+
+.search input {
+    width: 100%;
+    height: 20px;
+    background-color: #fafafa;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+}
+
+.search input::-webkit-input-placeholder {
+    color: #8e8e8e;
+}
+
+.search input:focus {
+    color: #8e8e8e;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+header .navbar .nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item li {
+    margin: 10px;
+}
+
+.nav-item .profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.nav-item .home {
+    background-image: url(../img/ig-sprite2.png);
+    background-position: -720px 42px;
+    height: 25px;
+    width: 25px;
+}
+
+.nav-item .inbox {
+    background-image: url(../img/ig-sprite2.png);
+    background-position: -319px 95px;
+    height: 23px;
+    width: 23px;
+}
+
+.nav-item .explore {
+    background-image: url(../img/ig-sprite2.png);
+    background-position: -747px 42px;
+    height: 25px;
+    width: 27px;
+}
+
+.nav-item .folowbar {
+    background-image: url(../img/ig-sprite2.png);
+    background-position: -251px 247px;
+    height: 25px;
+    width: 27px;
+}
+
+/* Story IG */
+
+main {
+    margin: 0 15%;
+}
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #e0dfdf;
+    width: 65%;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 5px;
+    box-sizing: border-box;
+}
+
+.story-border {
+    max-width: 60px;
+    border-radius: 50%;
+    background: linear-gradient(to right, red, purple);
+    padding: 2px;
+}
+
+.story .thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.story .thumbnail img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.story:first-child {
+    margin-left: 20px;
+
+}
+
+.story:last-child {
+    margin-right: 20px;
+}
+
+.story .user {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.container-post {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e0dfdf;
+    width: 65%;
+}
+
+.account {
+    margin: 10px;
+    display: flex;
+}
+
+.account .profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.account .user {
+    line-height: 40px;
+    color: black;
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.post img {
+    width: 100%;
+}
