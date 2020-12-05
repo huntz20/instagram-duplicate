@@ -8,8 +8,7 @@
     padding: 10px;
 }
 
-.wrapper .login-content {
-}
+.wrapper .login-content {}
 
 .login-content .login-panel {
     max-width: 906px;
@@ -17,11 +16,9 @@
     position: relative;
 }
 
-.login-panel .camera-image {
-}
-.login-panel .login-form {
+.login-panel .camera-image {}
 
-}
+.login-panel .login-form {}
 
 .wrapper .login-footer {
     margin: 10px auto;
@@ -34,7 +31,7 @@
 }
 
 .wrapper .login-footer .login-footer-nav ul li {
-    display : inline-block;
+    display: inline-block;
     padding: 1em 5px;
     font-family: sans-serif;
     color: dodgerblue;
@@ -60,4 +57,3 @@
 .ig-slider img {
     width: 245px;
 }
-

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="html">
+
+<head>
+    <title>Pawit Wahib (@kapawit) - Instagram</title>
+    <link rel="stylesheet" href="./profile.css">
+</head>
+
+<body>
+    <nav>
+        <div class="topnav">
+            <div class="nav-brand">
+                <span class="brand"></span>
+            </div>
+            <div class="nav-search">
+                <input type="text" placeholder="Search" name="search">
+            </div>
+            <div class="nav-icon">
+                <a class="sprite" href="#" id="home"></a>
+                <a class="sprite" href="#" id="inbox"></a>
+                <a class="sprite" href="#" id="explore"></a>
+                <a class="sprite" href="#" id="activity"></a>
+                <a class="sprite dropbtn" href="#" id="profile" onclick="profileDropdown()"></a>
+                <div class="dropdown-content" id="profile-dropdown">
+                    <span class="triangle"></span>
+                    <span class="dropdown-icon" id="dropdown-profile"></span><a class="dropdown-link" href="#"> Profile</a>
+                    <span class="dropdown-icon" id="dropdown-saved"></span><a class="dropdown-link" href="#"> Saved</a>
+                    <span class="dropdown-icon" id="dropdown-setting"></span><a class="dropdown-link" href="#"> Settings</a>
+                    <span class="dropdown-icon" id="dropdown-switch"></span><a class="dropdown-link" href="#"> Switch Accounts</a>
+                    <hr>
+                    <a class="logout" href="#">Log Out</a>
+                </div>
+            </div>
+    </nav>
+    <div class="profile-wrapper">
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-pic">
+                    <img src="./instagram-assets/profile/profile.jpg" alt="profil">
+                </div>
+                <div class="profile-detail">
+                    <div class="profile-id">
+                        <h2>Kapaw.it</h2>
+                        <span class="verified"></span>
+                        <a id="btnprofile" href="#">Edit Profile</a>
+                        <a id="btnsetting" href="#"></a>
+                    </div>
+                    <div class="profile-stat">
+                        <a href="#"><b>100</b> Post</a>
+                        <a href="#"><b>100m</b> followers</a>
+                        <a href="#"><b>100</b> following</a>
+                    </div>
+                    <div class="profile-desc">
+                        <h4>Pawit Wahib</h4>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="profile-highlight">
+                <li>
+                    <a class="highlight" href="#"><img src="https://picsum.photos/id/1066/200" alt=""></a>
+                    <p>Highlight 1</p>
+                </li>
+                <li>
+                    <a class="highlight" href="#"><img src="https://picsum.photos/id/1029/200" alt=""></a>
+                    <p>Highlight 2</p>
+                </li>
+                <li>
+                    <a class="highlight" href="#"><img src="https://picsum.photos/id/166/200" alt=""></a>
+                    <p> Highlight 3</p>
+                </li>
+                <li>
+                    <a class="highlight" href="#"><img src="https://picsum.photos/id/199/200" alt=""></a>
+                    <p>Highlight 4</p>
+                </li>
+                <li>
+                    <a class="highlight" href="#"><img src="https://picsum.photos/id/666/200" alt=""></a>
+                    <p>Highlight 5</p>
+                </li>
+                <li>
+                    <a class="highlight" href="#"><img src="https://picsum.photos/id/122/200" alt=""></a>
+                    <p>Highlight 6</p>
+                </li>
+            </ul>
+            <hr>
+            <div class="profile-tab">
+                <div class="menu-tab">
+                    <a class="active" href="#"><span id="posts"></span>POSTS</a>
+                    <a href="#"><span id="igtv"></span>IGTV</a>
+                    <a href="#"><span id="saved"></span>SAVED</a>
+                    <a href="#"><span id="taged"></span>TAGED</a>
+                </div>
+            </div>
+            <div class="profile-galery">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/102/400" alt="img">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/1002/400" alt="">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/122/400" alt="">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/144/400" alt="">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/124/400" alt="">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/155/400" alt="">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/172/400" alt="">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/132/400" alt="">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/id/152/400" alt="">
+                            <div class="img-overlay">
+                                <div class="img-stat">
+                                    <span class="like"></span> 234k
+                                    <span class="comment"></span> 20k
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="profile-footer">
+                <ul class="footer-container">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Top Accounts</a></li>
+                    <li><a href="#">Hastags</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+                <div class="footer-container">
+                    <select class="footer-language">
+                        <option>English</option>
+                        <option>Indonesia</option>
+                        <option>Jawa</option>
+                        <option>Sunda</option>
+                        <option>Isyarat</option>
+                    </select>
+                    <div class="footer-copyright">&copy 2020 Instagram from Facebook</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function profileDropdown() {
+            document.getElementById("profile-dropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("profile-dropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
