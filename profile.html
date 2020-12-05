@@ -16,13 +16,21 @@
                 <input type="text" placeholder="Search" name="search">
             </div>
             <div class="nav-icon">
-                <a href="#" id="home"></a>
-                <a href="#" id="inbox"></a>
-                <a href="#" id="explore"></a>
-                <a href="#" id="activity"></a>
-                <a href="#" id="profile"></a>
+                <a class="sprite" href="#" id="home"></a>
+                <a class="sprite" href="#" id="inbox"></a>
+                <a class="sprite" href="#" id="explore"></a>
+                <a class="sprite" href="#" id="activity"></a>
+                <a class="sprite dropbtn" href="#" id="profile" onclick="profileDropdown()"></a>
+                <div class="dropdown-content" id="profile-dropdown">
+                    <span class="triangle"></span>
+                    <span class="dropdown-icon" id="dropdown-profile"></span><a class="dropdown-link" href="#"> Profile</a>
+                    <span class="dropdown-icon" id="dropdown-saved"></span><a class="dropdown-link" href="#"> Saved</a>
+                    <span class="dropdown-icon" id="dropdown-setting"></span><a class="dropdown-link" href="#"> Settings</a>
+                    <span class="dropdown-icon" id="dropdown-switch"></span><a class="dropdown-link" href="#"> Switch Accounts</a>
+                    <hr>
+                    <a class="logout" href="#">Log Out</a>
+                </div>
             </div>
-        </div>
     </nav>
     <div class="profile-wrapper">
         <div class="profile-content">
@@ -213,6 +221,20 @@
             </div>
         </div>
     </div>
+    <script>
+        function profileDropdown() {
+            document.getElementById("profile-dropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("profile-dropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

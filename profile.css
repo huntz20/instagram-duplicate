@@ -108,7 +108,7 @@ nav {
     justify-content: flex-end;
 }
 
-.nav-icon a {
+.nav-icon .sprite {
     width: 23px;
     height: 23px;
     position: relative;
@@ -135,6 +135,79 @@ nav {
 #profile {
     background-position: -94px -452px;
 }
+
+
+.dropdown-content {
+    top: 40px;
+    z-index: 1;
+    display: none;
+    min-width: 210px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content .dropdown-link {
+    float: none;
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 10px 15px 12px 44px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.dropdown-content .dropdown-link:hover {
+    background-color: #fafafa;
+}
+
+.dropdown-content .logout {
+    float: none;
+    display: block;
+    color: black;
+    text-align: left;
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 13px 15px 12px 20px;
+}
+.dropdown-icon {
+    zoom: 0.8;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 15px 15px 0px;
+    background: url('./instagram-assets/profile/ig-sprite.png') no-repeat;
+}
+
+#dropdown-profile {
+    background-position: -143px -451px;
+}
+#dropdown-saved {
+    background-position: -194px -451px;
+}
+#dropdown-setting {
+    background-position: -116px -451px;
+}
+#dropdown-switch {
+    background-position: -167px -451px;
+}
+
+.dropdown-content .triangle {
+    width: 0;
+    height: 0;
+    top: -20px;
+    right: 10px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #fff;
+}
+
+.show {
+    display: block;
+}
+
 
 /* profile content */
 .profile-wrapper .profile-content {
