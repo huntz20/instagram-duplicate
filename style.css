@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    border-bottom: solid 1px #DBDBDB;
+    background-color: #FFFFFF;
+}
+
+header .container {
+    max-width: 935px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .instagram-logo {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+}
+
+header .instagram-logo img {
+    width: 110px;
+    height: 40px;
+}
+
+header .search-box {
+    max-width: 215px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .search-box input[type="text"] {
+    width: 100%;
+    height: 28px;
+    border-radius: 2px;
+    border: solid 1px #DBDBDB;
+    align-items: center;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+header .nav-icon {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*padding-left: 100px;*/
+    margin-left: 100px;
+}
+
+header .nav-icon .nav-icon-listener {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 22px;
+    height: 22px;
+}
+
+header .nav-icon .nav-icon-listener li {
+    position: initial;
+    top: 0;
+}
+
+#home-icon {
+    top: 56px;
+    left: 40px;
+    background: url("./Instagram Assets/..png") -97px 0;
+}
+
+
+main .container {
+    width: 100vw;
+    height: 92vh;
+    padding: 20px;
+}
+
+main .main-content {
+    width: 600%;
+    height: 400%;
+    max-width: 935px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    display: flex;
+    border-radius: 5px;
+    border: solid 1px #DBDBDB;
+}
+
+div.gallery {
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 200px;
+  }
+
+.footer {
+    margin: 10px auto;
+    max-width: 1150px;
+    text-align: center;
+}
+
+footer .footer .footer-nav {
+    flex: 2;
+}
+
+footer .footer .footer-nav ul li {
+    display : inline-block;
+    padding: 1em 5px;
+    font-family: sans-serif;
+    color: #8e8e8e;
+    font-weight: 500;
+    font-size: .7em;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+.footer-nav a:hover{
+    color: blue;
+}
+
+.footer-copyright {
+    flex: 1;
+    color: #8e8e8e;
+    font-weight: 550;
+    font-size: .7em;
+}
+
+.footer-copyright a{
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+.footer-copyright a:hover{
+    color: blue;
+}
