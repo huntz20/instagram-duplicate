@@ -1,6 +1,100 @@
 * {
-    margin: 0;
+    box-sizing: border-box;
     padding: 0;
+    margin: 0;
+    border: 0;
+}
+header {
+    width: 100vw;
+    height: 8vh;
+    border-bottom: solid 1px #DBDBDB;
+    background-color: #FFFFFF;
+}
+
+header .container {
+    max-width: 935px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .instagram-logo-container {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .instagram-logo {
+    width: 105px;
+    height: 30px;
+    background: url("./instagram-assets/ig-sprite.png") -122px -225px;
+}
+
+
+header .search-box {
+    max-width: 215px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .search-box input[type="text"] {
+    width: 100%;
+    height: 28px;
+    border-radius: 2px;
+    border: solid 1px #DBDBDB;
+    align-items: center;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+header .nav-icon {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .nav-icon-listener {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-icon-listener li {
+    margin-left: 24px;
+    background-color: blue;
+}
+
+.nav-icon-listener li,
+.nav-icon-listener a {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+
+header .home-icon {
+    background: url("./instagram-assets/nav-icon-sprite.jpg") 208px 126px;
+}
+
+header .dm-icon {
+    background: url("./instagram-assets/nav-icon-sprite.jpg") -53px 129px;
+
+}
+
+header .explore-icon {
+    background: url("./instagram-assets/nav-icon-sprite.jpg") 120px 126px;
+
+}
+
+header .activity-icon {
+    background: url("./instagram-assets/nav-icon-sprite.jpg") 76px 127px;
+}
+
+header .profile-icon {
+    background: url("./instagram-assets/nav-icon-sprite.jpg") 37px 127px;
 }
 
 .wrapper {
